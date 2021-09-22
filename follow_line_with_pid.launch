@@ -1,0 +1,5 @@
+<launch>
+	<include file="pid_movement.launch"/>
+	<node name="lane_pose_publisher" pkg="line_following" type="lane_detection_v2.py"/>
+	<node name="line_following_node" pkg="line_following" type="follow_line_step_pid.py"/>
+</launch>
